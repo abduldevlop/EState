@@ -17,5 +17,9 @@
 
   @include sm {
     max-width: 640px;
+    background-color: #fcf5f3;
+  }
+  .content {
+    height: calc(100vh - 100px);
   }
 }

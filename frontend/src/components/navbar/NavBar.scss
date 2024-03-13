@@ -40,7 +40,7 @@ nav {
     .links {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 30px;
       margin-left: 40px;
     }
   }
@@ -52,6 +52,45 @@ nav {
     height: 100%;
     background-color: #fcf5f3;
 
+    .user {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      img {
+        width: 50px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      span {
+        @include sm {
+          display: none;
+        }
+      }
+      .profile {
+        padding: 10px 20px;
+        background-color: #fece51;
+        font-weight: 400;
+        font-size: 14px;
+        border-radius: 5px;
+        position: relative;
+        .notification {
+          position: absolute;
+          top: -8px;
+          right: -8px;
+          background-color: red;
+          color: white;
+          width: 26px;
+          height: 26px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
     @include md {
       background-color: transparent;
     }

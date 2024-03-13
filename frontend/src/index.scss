@@ -13,3 +13,7 @@ body {
   font-family: "Lato", sans-serif;
   overflow: hidden;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}

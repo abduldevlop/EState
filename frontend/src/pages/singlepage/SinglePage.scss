@@ -1,0 +1,202 @@
+@import "../../responsive.scss";
+.single-page {
+  display: flex;
+  height: 100%;
+  overflow-y: scroll;
+  @include md {
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100%;
+  }
+
+  .details {
+    flex: 3;
+
+    @include md {
+      flex: none;
+      height: max-content;
+    }
+    .wrapper {
+      padding-right: 50px;
+
+      .info {
+        margin-top: 50px;
+        .top {
+          display: flex;
+          justify-content: space-between;
+          .post {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            h1 {
+              font-weight: 400;
+            }
+            .addres {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              font-size: 14px;
+              color: #888;
+              img {
+                width: 16px;
+                height: 16px;
+              }
+            }
+            .price {
+              padding: 5px;
+              background-color: #e8ea7b;
+              border-radius: 5px;
+              width: max-content;
+              font-size: 20px;
+              font-weight: 300;
+            }
+          }
+          .user {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 0 50px;
+            border-radius: 10px;
+            background-color: #e8ea7b;
+            font-weight: 600;
+            img {
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+            }
+          }
+        }
+        .bottom {
+          margin-top: 50px;
+          margin-bottom: 20px;
+          color: #555;
+        }
+      }
+    }
+  }
+  .features {
+    flex: 2;
+    background-color: #fcf5f3;
+
+    @include md {
+      flex: none;
+      height: max-content;
+    }
+    .wrapper {
+      padding: 0px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .list-verticle {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 10px;
+        background-color: white;
+        border-radius: 10px;
+
+        .features {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .feature-text {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            span {
+              font-weight: bold;
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      .sizes {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+
+        @include lg {
+          font-size: 12px;
+        }
+        .size {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          span {
+            font-size: 14px;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .list-hor {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background-color: white;
+        border-radius: 10px;
+        .feature {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          span {
+            font-weight: bold;
+          }
+          p {
+            margin-top: 5px;
+            font-size: 12px;
+            color: gray;
+          }
+        }
+      }
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+      .title {
+        font-weight: 500;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .map-container {
+        width: 100%;
+        height: 200px;
+      }
+      .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        button {
+          cursor: pointer;
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          background-color: white;
+          border: 1px solid #e8ea7b;
+          border-radius: 10px;
+          img {
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+    }
+  }
+}
